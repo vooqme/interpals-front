@@ -1,0 +1,57 @@
+@import "../../node_modules/node.normalize.scss/normalize";
+@import "variables";
+
+html, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #5a1094;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Helvetica Neue", sans-serif;
+  color: $color-brownish-grey;
+  font-size: 16px;
+}
+
+:-ms-input-placeholder {
+  font-family: "Helvetica Neue", sans-serif;
+  color: $color-brownish-grey;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-family: "Helvetica Neue", sans-serif;
+  color: $color-brownish-grey;
+  font-size: 16px;
+}

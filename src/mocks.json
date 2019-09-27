@@ -1,0 +1,19 @@
+[{
+  "id": 1,
+  "name": "The Chelsea Boot",
+  "price": 235,
+  "img": "https://picsum.photos/id/941/45/45",
+  "color": "black"
+}, {
+  "id": 2,
+  "name": "The Chelsea Boot",
+  "price": 1235,
+  "img": "https://picsum.photos/id/942/45/45",
+  "color": "black"
+}, {
+  "id": 3,
+  "name": "The Chelsea Boot",
+  "price": 35,
+  "img": "https://picsum.photos/id/943/45/45",
+  "color": "black"
+}]

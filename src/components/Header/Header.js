@@ -1,16 +1,18 @@
 import React from 'react';
 
+import Logo from 'components/Logo/Logo';
+import CartIcon from 'icons/cart.svg';
 import styles from './Header.module.scss';
-import logoIcon from './logo.svg';
-import cartIcon from './cart.svg';
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.wrap}>
-        <img src={logoIcon} alt=""/>
-        Front-end Developer Test Task
-        <img src={cartIcon} alt=""/>
+        <Logo/>
+        <div className={styles.cart}>
+          <CartIcon/>
+          <span className={styles.cartCount}>3</span>
+        </div>
       </div>
     </header>
   );

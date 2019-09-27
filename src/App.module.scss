@@ -1,8 +1,10 @@
+@import "styles/variables";
+
 .app{
-  background: #e6e9f0;
+  background: $color-very-light-blue;
   height: 100%;
 }
 
 .content{
-  padding: 45px 0 0;
+  padding: 45px 0;
 }

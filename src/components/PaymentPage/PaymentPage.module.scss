@@ -1,9 +1,28 @@
-@import '../../index';
+@import '../../styles/common';
 
 .wrap {
   @extend .wrap;
-  height: 589px;
   border-radius: 5px;
   box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.07);
-  background-image: linear-gradient(to bottom, #ffffff, #fefefe);
+  padding: 0;
+  background-color: #F2F4F7;
+  align-items: flex-start;
 }
+
+.col {
+  height: 100%;
+  flex: 1;
+}
+
+.colForm {
+  @extend .col;
+  width: 400px;
+  padding: 20px 40px;
+  background-image: linear-gradient(to bottom, $color-white, $color-white-two);
+}
+
+.colSummary {
+  @extend .col;
+  padding: 24px 12px;
+}
+

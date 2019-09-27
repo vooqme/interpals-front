@@ -1,15 +1,56 @@
+@import '../../styles/common';
+
 .header {
-  border-bottom: 1px solid #bb0cb2;
-  height: 50px;
-  background-color: #ffffff;
-  color: #5a1094;
+  height: 51px;
+  background-color: $color-white;
+  color: $color-indigo-blue;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    height: 1px;
+    opacity: 0.3;
+    background-image: linear-gradient(to left, #7e00e8, $color-strong-pink 54%, #bb0cb2);
+  }
 }
 
 .wrap {
-  width: 700px;
-  margin: 0 auto;
-  padding: 0 5px;
-  height: 100%;
+  @extend .wrap;
+  justify-content: space-between;
+}
+
+.cart {
+  font-size: 15px;
+  font-weight: 400;
+  color: #c90ea5;
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+  position: relative;
+}
+
+.cartCount {
+  min-width: 14px;
+  height: 14px;
+  border-radius: 37px;
+  border: solid 1px $color-white;
+  background-color: $color-strong-pink;
+  font-size: 9px;
+  font-weight: 500;
+  text-align: center;
+  color: $color-white;
+  letter-spacing: -1px;
+  padding: 0 3px;
+  position: absolute;
+  right: -6px;
+  top: -5px;
+  z-index: 2;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
